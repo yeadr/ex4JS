@@ -42,3 +42,11 @@ return resultat
 }
 
 console.log(ex3([1, 43], [2, 43, 34]))
+
+function ex4(a,b) {
+console.log("")
+console.log("Exercici 4:")
+const set = new Set([...a, ...b])
+return Array.from(set)
+}
+console.log(ex4([1, 43], [2, 43, 34]))
