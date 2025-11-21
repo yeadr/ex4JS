@@ -66,9 +66,30 @@ function ex6(arr) {
 console.log("")
 console.log("Exercici 6:")
 return arr.filter((s) => {
-    return s.split('a').length - 1 > 1
+    return s.split("a").length - 1 > 1
 })
 }
 
 console.log(ex6(["Hola", "Adermamita", "no"]))
+
+function ex7() {
+console.log("")
+console.log("Exercici 7:")
+const m = new Map()
+m.set(1, "numero")
+m.set("clau", 123)
+m.set(true, "boolea")
+return Array.from(m)
+}
+
+console.log(ex7())
+
+function ex8(paraula) {
+console.log("")
+console.log("Exercici 8:")
+return paraula.toLowerCase() === paraula.split("").reverse().join("").toLowerCase()
+}
+
+console.log(ex8("H&oo&H"))
+console.log(ex8("Edensphere"))
 
