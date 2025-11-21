@@ -93,3 +93,20 @@ return paraula.toLowerCase() === paraula.split("").reverse().join("").toLowerCas
 console.log(ex8("H&oo&H"))
 console.log(ex8("Edensphere"))
 
+function ex9() {
+console.log("")
+console.log("Exercici 9:")
+
+const queue = []
+queue.push({titol:"El nombre mega original de pelicula", any:2001})
+queue.push({titol:"La mas antigua", any:1995})
+queue.push({titol:"Homestuck", any:2010})
+
+const masAntigua = queue.reduce((antigua, actual) => {
+    return actual.any < antigua.any ? actual : antigua
+})
+
+return masAntigua
+}
+
+console.log(ex9())
