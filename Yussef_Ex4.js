@@ -26,3 +26,19 @@ return nou
 }
 
 console.log(ex2())
+
+function ex3(a,b) {
+console.log("")
+console.log("Exercici 3:")
+const fusio = [...a, ...b]
+const resultat = []
+fusio.forEach(x => { 
+    if (!resultat.includes(x)){
+        resultat.push(x) 
+    }
+    })
+
+return resultat
+}
+
+console.log(ex3([1, 43], [2, 43, 34]))
