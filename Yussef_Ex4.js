@@ -50,3 +50,25 @@ const set = new Set([...a, ...b])
 return Array.from(set)
 }
 console.log(ex4([1, 43], [2, 43, 34]))
+
+
+function ex5(arr) {
+console.log("")
+console.log("Exercici 5:")
+return arr.map((x) => {
+    return x**3
+})
+}
+
+console.log(ex5([1, 2, 3749]))
+
+function ex6(arr) {
+console.log("")
+console.log("Exercici 6:")
+return arr.filter((s) => {
+    return s.split('a').length - 1 > 1
+})
+}
+
+console.log(ex6(["Hola", "Adermamita", "no"]))
+
